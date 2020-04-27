@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/snctzn"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/snctz"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:layout_width="365dp"
+            android:layout_height="217dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/senior" />
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:id="@+id/radioGroup"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="Male"
+            android:textColor="#FFF"
+            android:id="@+id/radioButton"
+            android:checked="false"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/radioButton2"
+            android:textColor="#FFF"
+            android:checked="false"
+            android:textSize="25dp"
+            />
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup">
+
+
+    <Button
+        android:id="@+id/pickdte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:drawableTop="@drawable/date"
+        android:text="Date of Birth"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+
+
+
+        />
+
+    <Button
+        android:id="@+id/pickcurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonbg"
+        android:drawableTop="@drawable/currentdate"
+        android:text="Pick Current or\nFuture Date"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonbg"
+        android:drawableTop="@drawable/calculate"
+        android:text="Calculate"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/datereslt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your DOB -"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textColor="#ed5f00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1"
+        />
+
+    <TextView
+        android:id="@+id/datereslt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO Date -"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ed5f00"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/datereslt"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
